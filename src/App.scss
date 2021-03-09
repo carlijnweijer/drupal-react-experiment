@@ -1,3 +1,7 @@
+.app {
+  margin: 0 100px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-evenly;
@@ -21,5 +25,10 @@
 
 .blog {
   max-width: 900px;
-  margin-left: 25px;
+}
+
+.article {
+  h1 {
+    color: blue;
+  }
 }
