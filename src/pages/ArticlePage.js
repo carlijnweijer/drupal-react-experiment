@@ -5,7 +5,7 @@ export default function ArticlePage() {
   const params = useParams();
 
   return (
-    <div>
+    <div className="article">
       <h1>hi i'm articlepage</h1>
     </div>
   );
