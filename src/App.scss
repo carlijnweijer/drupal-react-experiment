@@ -9,7 +9,7 @@
   padding: 10px;
 
   margin-top: 30px;
-  border-bottom: 3px solid lightseagreen;
+  border-bottom: 3px solid #ffcc00;
 
   a {
     color: black;
@@ -17,9 +17,8 @@
     width: 50px;
     text-decoration: none;
     text-transform: uppercase;
-
-    .active {
-      font-family: "Playfair Display", serif;
-    }
+  }
+  .active {
+    font-family: "Playfair Display", serif;
   }
 }
