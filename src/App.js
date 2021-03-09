@@ -8,11 +8,11 @@ import ArticlePage from "./pages/ArticlePage";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Navbar />
       <Switch>
-        <Route path="/blog" component={BlogPage} />
         <Route path="/blog/:articleId" component={ArticlePage} />
+        <Route path="/blog" component={BlogPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/" component={HomePage} />
       </Switch>
