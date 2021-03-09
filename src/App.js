@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import { useEffect, useState } from "react";
+import { Route, Switch } from "react-router";
+import BlogPage from "./pages/BlogPage";
+import AboutPage from "./pages/AboutPage";
+import HomePage from "./pages/HomePage";
+import Navbar from "./components/nav/Navbar";
 
 function App() {
+  // useEffect(() => {
+  //   const getDestinations = async () => {
+  //     const response = await axios.get(
+  //       `http://traveldestinations.dd:8083/jsonapi/node/destination`
+  //     );
+
+  //     setDestinations(response.data.data);
+  //   };
+  //   getDestinations();
+  // }, []);
+
+  // console.log("what is destinations", destinations);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Switch>
+        <Route path="/blog" component={BlogPage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/" component={HomePage} />
+      </Switch>
     </div>
   );
 }
