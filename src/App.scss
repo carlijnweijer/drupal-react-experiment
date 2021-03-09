@@ -25,6 +25,22 @@
 
 .blog {
   max-width: 900px;
+
+  &__preview {
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 1em;
+    max-height: 100px;
+    overflow: hidden;
+
+    a {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      color: black;
+      font-size: 22px;
+      text-decoration: none;
+    }
+  }
 }
 
 .article {
